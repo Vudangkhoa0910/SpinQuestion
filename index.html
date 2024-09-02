@@ -26,10 +26,17 @@ SOFTWARE.
 -->
     
     <style type="text/css">
+    body{
+        background-color: lightpink;
+    }
+    
     text{
         font-family:Helvetica, Arial, sans-serif;
         font-size:11px;
         pointer-events:none;
+    }
+    h3 {
+        margin-left: 90px;
     }
     #chart{
         position:absolute;
@@ -56,16 +63,30 @@ SOFTWARE.
         -webkit-transform:translate(0,-50%);
                 transform:translate(0,-50%);
     }
+
+    .Req {
+        margin-top: 490px;
+        margin-left:;
+    }
     </style>
     
 </head>
 <body>
+    <h3>Spin Question made in KhoaBu </h3>
     <div id="chart"></div>
     <div id="question"><h1></h1></div>
     
+    <div  class="Req">
+    <h3>Yêu cầu & Giới thiệu: </h3>
+    <ul>
+        <li>Thật thà, dũng cảm, táo bạo</li>
+        <li>Dám quay, dám trả lời</li>
+        <li>Sẽ có những ô phần thưởng độc lạ</li>
+    </div>
+    
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
-        var padding = {top:20, right:40, bottom:0, left:0},
+        var padding = {top:55, right:40, bottom:0, left:0},
             w = 500 - padding.left - padding.right,
             h = 500 - padding.top  - padding.bottom,
             r = Math.min(w, h)/2,
